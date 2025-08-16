@@ -11,13 +11,12 @@ function library:CreateWindow(titleText)
 	Screen.Name = "NyxUI"
 	Screen.Parent = Player:WaitForChild("PlayerGui")
 
-	local TopBar = Instance.new("ImageLabel")
+	local TopBar = Instance.new("Frame")
 	TopBar.Name = "TopBar"
 	TopBar.Parent = Screen
 	TopBar.AnchorPoint = Vector2.new(0.5, 0.5)
 	TopBar.Position = UDim2.new(0.5, 0, 0.2, 0)
 	TopBar.Size = UDim2.new(0, 500, 0, 25)
-	TopBar.Image = "rbxassetid://3570695787"
 	TopBar.ImageColor3 = Color3.fromRGB(33, 32, 49)
 	TopBar.SliceCenter = Rect.new(100, 100, 100, 100)
 	TopBar.SliceScale = 0.03
@@ -41,12 +40,11 @@ function library:CreateWindow(titleText)
 	ToggleButton.ImageColor3 = Color3.new(1, 1, 1)
 	ToggleButton.Rotation = 90
 
-	local MainFrame = Instance.new("ImageLabel")
+	local MainFrame = Instance.new("Frame")
 	MainFrame.Parent = TopBar
 	MainFrame.Position = UDim2.new(0.5, 0, 6.5, 0)
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 	MainFrame.Size = UDim2.new(0, 500, 0, 300)
-	MainFrame.Image = "rbxassetid://3570695787"
 	MainFrame.ImageColor3 = Color3.fromRGB(20, 20, 20)
 	MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
 	MainFrame.SliceScale = 0.03
